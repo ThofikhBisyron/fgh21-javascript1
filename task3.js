@@ -1,9 +1,15 @@
-let s = "";
-for (let i = 5; i >= 0; i--) {
-  for (let a = 1; a <= i; a++) {
-    s = s + a;
-  }
-    s = s + "\n";
+const printsegitiga = 5
+if(typeof printsegitiga !== "number"){
+        console.log("data harus number")
+    }else{
+    for(let numawal = printsegitiga; numawal > 0; numawal--){     
+    {
+        let text = ""
+       for(let i =1; i <= numawal; i++){  
+             
+             text = text + i + " "
+         }
+        console.log(text)
+    }
 }
-console.log(s)
-
+    }
