@@ -1,5 +1,5 @@
 
-let data = {
+const data = {
     id          : 1,
     name        : "leanne Graham",
     username    : "Bret",
@@ -19,9 +19,21 @@ let datar = {
     email       : "syaifania.raisya@gmail.com",
     hobby       : "masak",
 }
-let {street, city} = data.address;
+ const {street, city} = data.address;
 
-let data1 = {...data, ...datar}
-console.log(data1)
-console.log(street)
-console.log(city)
+ const data1 = {...data, ...datar}
+ console.log(data1)
+ console.log(street)
+ console.log(city)
+
+// const data1 = {...data}
+ //data1.address.city = "surabaya"
+ // console.log(data1)
+
+ //let data1 = {data.address.city : "surabaya"}
+
+ //let data2 = {...data, ...data1}
+ //console.log(data2)
+
+//const data1 = {...data, address: (...data.address, city: 'jakarta')}
+//console.log{data1}
